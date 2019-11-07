@@ -5,7 +5,7 @@ inputs:
     description: 'Arguments to be passed to clj-kondo'
     required: true
     default: '--lint src'
-  github-token:
+  github_token:
     description: 'Github token to report linter results back to check'
     required: true
 runs:
@@ -13,5 +13,3 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.clj-kondo-args }}
-  env:
-    - GITHUB_TOKEN=${{ inputs.github-token }}
