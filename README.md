@@ -16,3 +16,7 @@ Run clj-kondo and annotate source code changes with results.
 ![Annotation example](images/annotation.png)
 
 ![Check Run example](images/check-run.png)
+
+# License
+
+The scripts and documentation in this project are released under the [MIT License](LICENSE)

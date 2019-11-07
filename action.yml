@@ -1,5 +1,9 @@
 name: 'clj-kondo checks'
 description: 'Lint your clojure code with clj-kondo in parallel to your builds'
+author: 'DeLaGuardo'
+branding:
+  icon: 'gift'
+  color: 'blue'
 inputs:
   clj-kondo-args:
     description: 'Arguments to be passed to clj-kondo'
