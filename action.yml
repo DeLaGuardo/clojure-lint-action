@@ -1,0 +1,12 @@
+name: 'clj-kondo checks'
+description: 'Lint your clojure code with clj-kondo in parallel to your builds'
+inputs:
+  clj-kondo-args:
+    description: 'Arguments to be passed to clj-kondo'
+    required: true
+    default: '--lint src'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.clj-kondo-args }}
