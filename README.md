@@ -10,6 +10,9 @@ Run clj-kondo and annotate source code changes with results.
     - uses: DeLaGuardo/clojure-lint-action@v1
       with:
         clj-kondo-args: --lint src
+        # secrets.GITHUB_TOKEN is needed here
+        # to publish annotations back to github
+        # this action is not storing or sending it anywhere
         github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
