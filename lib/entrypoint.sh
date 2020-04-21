@@ -2,4 +2,4 @@
 
 set -e
 
-node /action/lib/run.js $1
+node /action/lib/run.js
