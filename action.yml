@@ -9,11 +9,15 @@ inputs:
     description: 'Arguments to be passed to clj-kondo'
     required: true
     default: '--lint src'
+  check-name:
+    description: 'Check name will be visible in Github Checks list'
+    default: 'clj-jondo check'
   github_token:
     description: 'Github token to report linter results back to check'
     required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.clj-kondo-args }}
+  env:
+    CHECK_NAME: ${{ inputs.check-name }}
+    LINT_ARGS: ${{ inputs.clj-kondo-args }}
