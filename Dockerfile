@@ -1,4 +1,4 @@
-FROM borkdude/clj-kondo AS binary
+FROM borkdude/clj-kondo:latest AS binary
 
 FROM node:10-slim
 
