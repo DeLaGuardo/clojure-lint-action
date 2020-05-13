@@ -11,7 +11,7 @@ inputs:
     default: '--lint src'
   check-name:
     description: 'Check name will be visible in Github Checks list'
-    default: 'clj-jondo check'
+    default: 'clj-kondo check'
   github_token:
     description: 'Github token to report linter results back to check'
     required: true
